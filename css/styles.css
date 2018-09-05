@@ -196,5 +196,15 @@ h3 ~ p {
     .top-space {
       padding-top: 50px;
     }
+    .profile-img.col-narrow {
+      display: block;
+      margin: 0 auto;
+    }
 
+@media (max-width: 620px) {
+  h1 {
+    font-size: 35px;
+    line-height: 70px;
+  }
+}
 }
