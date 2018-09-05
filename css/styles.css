@@ -1,0 +1,197 @@
+/* Colour palette
+
+(#DE1A1A red   hover links)
+#FFFFFF white  side, header type
+#CC8400 yellow  education, title, links
+#daa545 light yellow
+#383838 grey  header, Footer
+#001918 black  type
+
+----------------------------------*/
+
+
+/* ---- Global styles ---------- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+font-family: 'Rubik', sans-serif;
+font-weight: 300;
+margin: 0;
+}
+h1, h2 {
+font-family: 'Trirong', serif;
+}
+h1 {
+  font-size: 70px;
+  line-height: 85px;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  line-height: 28px;
+}
+h3 {
+  font-weight: 400;
+  margin: 0;
+}
+
+li {
+  line-spacing: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: #CC8400;
+  text-decoration-line: none;
+}
+a:hover {
+  color: #daa545;
+}
+
+/* .uppercase {
+  text-transform: uppercase;
+} */
+
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  background: #CC8400;
+  color: #FFFFFF;
+  border-radius: 5px 0 0 0;
+  padding: 10px;
+  display: inline-block;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+/* .col-narrow { */
+  /* width: 30%; */
+  /* float: left; */
+/* } */
+/* .col-wide { */
+  /* width: 70%; */
+  /* float: left; */
+  /* padding-left: 50px; */
+/* } */
+
+
+p + h3 {
+  margin-top: 25px;
+}
+
+/* ---- Header and Footer ------------ */
+header, footer {
+  background: #383838;
+  color: #daa545
+}
+
+/* header -------------------------- */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+
+header h1 {
+  color: #daa545;
+  margin: 0;
+}
+
+header h2 {
+  color: #CC8400;
+  margin: 0;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+
+
+/* navigation -------------------------- */
+nav {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.99);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+/* footer -------------------------- */
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+.copyright {
+  font-size: 75%;
+}
+
+/* ----- Work Experience -------------- */
+.work {
+  background: #CC8400;
+}
+.style-task {
+  font-weight:bold;
+}
+h3 ~ p {
+  margin: 0;
+}
+
+/* --------- Education --------------- */
+.education {
+  background: linear-gradient(rgba(255, 255, 255, 0.75),
+               rgba(255, 255, 255, 0.75)),
+               url(../images/green-chameleon-21532-unsplash.jpg) no-repeat fixed;
+               background-size: cover;
+}
+
+/* --------- Media Queries --------------- */
+
+@media (min-width: 800px){
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 799px){
+    .profile-img {
+      width: 200px;
+    }
+
+}
