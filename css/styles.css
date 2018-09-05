@@ -193,5 +193,8 @@ h3 ~ p {
     .profile-img {
       width: 200px;
     }
+    .top-space {
+      padding-top: 50px;
+    }
 
 }
