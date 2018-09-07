@@ -16,6 +16,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 body {
@@ -27,14 +29,14 @@ h1, h2 {
 font-family: 'Trirong', serif;
 }
 h1 {
-  font-size: 70px;
-  line-height: 85px;
+  font-size: 4.38rem;
+  line-height: 5.31rem;
 }
 h2 {
   font-size: 20px;
   font-weight: 600;
   margin-top: 0;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 h3 {
   font-weight: 400;
@@ -42,8 +44,8 @@ h3 {
 }
 
 li {
-  line-spacing: 1.5em;
-  margin-bottom: 1.5em;
+  /* line-spacing: 24px; */
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -53,10 +55,6 @@ a {
 a:hover {
   color: #daa545;
 }
-
-/* .uppercase {
-  text-transform: uppercase;
-} */
 
 .btn {
   text-decoration: none;
@@ -75,6 +73,7 @@ a:hover {
   overflow: auto;
 }
 
+/* MOVED TO MEDIA QUERIES */
 /* .col-narrow { */
   /* width: 30%; */
   /* float: left; */
@@ -88,6 +87,7 @@ a:hover {
 
 p + h3 {
   margin-top: 25px;
+  font-size: 1rem;
 }
 
 /* ---- Header and Footer ------------ */
@@ -153,7 +153,7 @@ footer {
   display: inline-block;
 }
 .copyright {
-  font-size: 75%;
+  font-size: 0.75rem;
 }
 
 /* ----- Work Experience -------------- */
@@ -174,6 +174,7 @@ h3 ~ p {
                url(../images/green-chameleon-21532-unsplash.jpg) no-repeat fixed;
                background-size: cover;
 }
+
 
 /* --------- Media Queries --------------- */
 
@@ -200,11 +201,10 @@ h3 ~ p {
       display: block;
       margin: 0 auto;
     }
-
+  }
 @media (max-width: 620px) {
   h1 {
     font-size: 35px;
     line-height: 70px;
   }
-}
 }
